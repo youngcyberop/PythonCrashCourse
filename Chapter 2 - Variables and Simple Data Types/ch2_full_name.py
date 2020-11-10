@@ -20,9 +20,9 @@ full_name = "{} {}".format(first_name, last_name)
 print(full_name)
 
 # Adding whitespace
-    # add \t for tab
+# add \t for tab
 print("\tPython")
-    # add \n for new line
+# add \n for new line
 print("Languages:\n\tPython\n\tJavaScript\n\tC")
 
 # Stripping whitespace
@@ -44,5 +44,3 @@ print(favorite_language)
 #   right removal
 favorite_language = favorite_language.strip()
 print(favorite_language)
-
-

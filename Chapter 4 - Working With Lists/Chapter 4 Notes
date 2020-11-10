@@ -1,0 +1,92 @@
+#   Range function generates a series of numbers
+#   Range starts counting at 0
+#   Syntax: for value in range(1, 5):
+#               print(value)
+#           Read "for every value in range of numbers 1 through 5, print value
+#           Output will print all numbers except for 5
+#           Range output will observe the off-by-one behavior
+
+for value in range(1, 5):
+    print(value)
+for value in range(0, 5):
+    print(value)
+for value in range(6):
+    print(value)
+
+#   Range() function can be used with list() function
+#   Results can be read into a list
+#       You can wrap list() round a call to the range function
+#           numbers = list(range(1,6))
+#           print(numbers)
+numbers = list(range(1,6))
+print(numbers)
+#   Third argument in range function parameter tells Python to "step-size" when generating numbers
+#       Range() function starts with value 2, then adds to that value, then does so repeatedly until
+#           it reaches or passes the end value, 11
+even_numbers = list(range(2, 11, 2))
+print(even_numbers)
+
+#   squares.py
+squares = []
+for value in range(1,11):
+    square = value ** 2
+    squares.append(square)
+print(squares)
+#   the same code can be written more concisely:
+squares = []
+for value in range(1, 11):
+    squares.append(value**2)
+print(squares)
+
+#   min() function finds the minimum value in a list
+#   max() function finds the maximum value in a list
+#   sum() function finds the maximum value in a list
+
+# example
+digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+print(f"{min(digits)}")
+print(f"{max(digits)}")
+print(f"{sum(digits)}")
+
+#   List comprehension combines the for loop and creation of new elements into one line
+#   Syntax: list = [<expression for variable> for <variable> in <range>]
+squares = [value**2 for value in range(1, 11)]
+print(squares)
+
+List slicing
+    - A list slice is a part of a list or a group of items in a list.
+    - Syntax: variable[index start, index end]
+    - Examples:
+        players = ['charles', 'martina', 'michael', 'florence', 'eli']
+        print(players[0:3])
+        print(players[1:4])
+    - Omit index start to start at the beginning of list
+        - Example:
+            print(players[:4])
+    - Omit index end to start at specific index and return all remaining items
+        - Example:
+            print(players[2:])
+    - Use negative number for index start to start from point at end of list
+
+Copying a list
+    - Use the splice operator (:)
+    - Tells Python to omit the first and second index
+    - Example:
+        my_foods = ['pizza', 'falafel', 'carrot cake']
+        friend_foods = my_foods[:]
+
+        print("My favorite foods are:")
+        print(my_foods)
+
+        print("\nMy  friend's favorite foods are:")
+        print(friend_foods)
+
+Tuples
+    - Python considers values that cannot change as immutable
+    - An immutable list is called a tuple
+    - Uses parentheses instead of brackets
+    - Example:
+        dimensions = (200, 50)
+    - A comma is required to define a tuple with one element
+    - Looping syntax is consistent with other list types
+    - Must redefine entire tuple variable if reassigning values

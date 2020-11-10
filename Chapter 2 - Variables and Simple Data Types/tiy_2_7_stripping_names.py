@@ -36,7 +36,3 @@ print("\nstrip")
 first_name = " Robert "
 first_name = first_name.strip()
 print(first_name)
-
-
-
-

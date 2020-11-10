@@ -20,4 +20,3 @@ print(name.upper())
 #   lower() method changes all case to lower case in a string
 #   this can be important when storing data
 print(name.lower())
-

@@ -1,0 +1,106 @@
+Python if statement allows you to examine the current state of a program and
+respond.
+
+Conditional statements evaluate to true or false.
+
+The equality operator (==) returns True if the values on the left and right
+side match and False if they do not match.
+
+Case matters in Python! audi does not equal Audi.
+
+The inequality operator (!=) checks to see if values are not equal.
+requested_topping = 'mushrooms'
+if requested_topping != 'anchovies':
+    print("Hold the anchovies!")
+
+The idea of a conditional test is the following:
+variable = value
+if variable != value:
+    do something
+
+Mathematical operators:
+    = equal to
+    < less than
+    <= less than or equal to
+    > greater than
+    >= greater than or equal to
+
+"and" can be used to check multiple conditions. For example:
+age_0 >= 21 and age_1 >= 21
+
+Parentheses can be used to improve readability.
+(age_0 >= 21) and (age_1 >= 21)
+
+"or" can be used to check multiple conditions, but passes when either or
+both of the individual tests pass, then fails only when both conditions fail.
+
+"in" keyword can be used to check if a list contains a certain value before
+taking an action.
+Example:
+    requested_toppings = ['bacon', 'sausage', 'onions']
+    'bacon' in requested_toppings -> true
+    'pepperoni' in requested_toppings -> false
+
+'not in' can be used to check if a list does not contain a certain value
+before taking an action.
+Example:
+banned_users = ['andrew', 'carolina', 'david'] user = 'marie'
+if user not in banned_users:
+print(f"{user.title()}, you can post a response if you wish.")
+
+'Boolean Expression' is another term for conditional test. A boolean value
+is either true or false.
+Booleans are value or variable types.
+Examples:
+game_active = True can_edit = False
+
+if - else checks:
+cars = ['audi', 'bmw', 'subaru', 'toyota']
+for car in cars:
+    if car == 'bmw':
+        print(car.upper())
+    else:
+        print(car.title())
+
+Simple if statements
+    if conditional_test:
+        do something
+
+IF-ELIF chain
+- if-elif-else chain is used to test multiple conditions
+- else is not required in if-elif chain
+- if-elif chain is only appropriate when one condition can pass
+- multiple if statements can be used in succession
+
+if-elif-else chain syntax:
+    if condition #1
+        do something
+    if condition #2
+        do something
+    else
+        do something
+Code example: single test to determine price
+age = 12
+if age < 4:
+    price = 0 e
+elif age < 18:
+    price = 25
+else:
+    price = 40
+print(f"Your admission cost is ${price}.")
+
+Code example: multiple tests to determine which toppings are added
+requested_toppings = ['mushrooms', 'extra cheese']
+if 'mushrooms' in requested_toppings:
+    print("Adding mushrooms.")
+if 'pepperoni' in requested_toppings:
+    print("Adding pepperoni.")
+if 'extra cheese' in requested_toppings:
+    print("Adding extra cheese.")
+print("\nFinished making your pizza!")
+
+
+
+
+
+

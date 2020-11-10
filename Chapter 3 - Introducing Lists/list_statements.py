@@ -10,7 +10,9 @@ print(motorcycles)
 
 # insert statement
 motorcycles.insert(0, 'suzuki')
-print(f"\nmotorcycle {motorcycles[0]} has been added inserted at index position 0")
+print(
+    f"\nmotorcycle {motorcycles[0]} has been added inserted at index "
+    f"position 0")
 print(motorcycles)
 
 # delete statement
@@ -24,7 +26,8 @@ motorcycles.append('suzuki')
 print(f"\nmotorcycle {motorcycles[1]} has been added")
 print(motorcycles)
 popped_motorcycles = motorcycles.pop()
-print(f"motorcycle {popped_motorcycles} has been popped from list")
+print(f"motorcycle "
+      f"{popped_motorcycles} has been popped from list")
 print(motorcycles)
 
 # pop method from any position
@@ -47,6 +50,7 @@ print("Ducati removed from list using removed() method")
 print(f"\n{motorcycles}")
 too_cheap = 'suzuki'
 motorcycles.remove(too_cheap)
-print(f"{too_cheap} has been removed from list and stored as too_cheap variable")
+print(
+    f"{too_cheap} has been removed from list and stored as too_cheap variable")
 print(f"too cheap = {too_cheap.title()}")
 print(motorcycles)

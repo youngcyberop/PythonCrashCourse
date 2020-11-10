@@ -43,7 +43,9 @@ print(f"Welcome {guests[3].title()} to dinner.")
 print(f"Welcome {guests[4].title()} to dinner.")
 print(f"Welcome {guests[5].title()} to dinner.")
 
-print(f"\nDue to unforseen circumstances, we will only be able to invite two to dinner.")
+print(
+    f"\nDue to unforseen circumstances, we will only be able to invite two "
+    f"to dinner.")
 
 # • Use pop() to remove guests from your list one at a time until only two
 # names remain in your list. Each time you pop a name from your list, print

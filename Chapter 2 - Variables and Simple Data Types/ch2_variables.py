@@ -9,7 +9,5 @@ message = "Hello Python Crash Course world!"
 print(message)
 
 # Create error
-#message = "Hello Python Crash Course reader!"
-#print(mesage)
-
-
+# message = "Hello Python Crash Course reader!"
+# print(mesage)

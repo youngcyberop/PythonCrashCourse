@@ -1,0 +1,30 @@
+# Changing, Adding, and Removing list elements
+#   Changing: vehicles[0] = 'Honda 4-wheeler'
+#   Append elements to the end of the list
+#       Append elements: vehicles.append('Honda Civic')
+#       You can build an empty list and append new values
+#   Inserting elements into a list
+#       vehicles.insert(0, 'Honda hybrid')
+#   Removing elements from a list
+#       del vehicles[1]
+#   Removing an Item using the pop() method
+#       Pop method() removes an item from the end of the list and stores it in a new variable
+#       Note: popped items are no longer stored in the list
+#           popped_vehicles = vehicles.pop()
+#       An example use case for this might be to describe the last vehicle you owned,
+#       if they were stored in a list in chronological order and you wanted to print that vehicle
+#   Pop items from any position in a list
+#       first_owned = vehicles.pop(0)
+#   Removing an item by value
+#       vehicles.remove('Honda Civic')
+#       Alternatively, you could define another variable to specify the value that's being removed:
+#            removed_vehicle = 'Honda Civic'
+#            vehicles.remove(removed_vehicle)
+
+#   sort() method will sort list alphabetically permanently
+#   sort(reverse=True) will sort list reverse alphabetically
+#   sorted() function will sort list alphabetically temporarily
+#   sorted(reverse=True) function will sort list reverse alphabetically temporarily
+#   reverse() method will reverse the order of the list permanently
+#   len() function will print the length of a list, starting at 1
+
